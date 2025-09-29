@@ -1,8 +1,0 @@
-version: "3.9"
-
-services:
-  base-php:
-    build:
-      context: .
-      dockerfile: Dockerfile.base
-    image: pelican-panel-registry-cbo9ov/base-php:latest
