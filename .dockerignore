@@ -27,3 +27,5 @@ storage/framework/testing
 storage/framework/views/*.php
 storage/logs/*.log
 vendor
+Caddyfile
+docker/
