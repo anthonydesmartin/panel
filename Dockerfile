@@ -31,7 +31,7 @@ RUN yarn config set network-timeout 300000 && yarn install --frozen-lockfile
 # Stage 2-1: Composer Optimize
 # ================================
 FROM --platform=$TARGETOS/$TARGETARCH composer AS composerbuild
-COPY --exclude=Caddyfile --exclude=docker/ . ./
+COPY . ./
 RUN composer dump-autoload --optimize
 
 # ================================
